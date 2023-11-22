@@ -1,0 +1,15 @@
+{
+  "name": "krohnkite-core",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "type:check": "tsc --noemit"
+  },
+  "keywords": [],
+  "author": "esjeon",
+  "license": "MIT"
+}

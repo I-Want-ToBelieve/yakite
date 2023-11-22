@@ -1,0 +1,31 @@
+name: Publish to Crates.io
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v14
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: Install direnv-nix
+        run: nix shell nixpkgs#direnv -c direnv allow .
+
+      - name: Build
+        run: cd $DEVENV_ROOT/apps/yakite; cargo build --release
+
+
+      - name: Publish to Crates.io
+        run: cd $DEVENV_ROOT/apps/yakite; cargo publish --token ${{ secrets.CRATES_IO_TOKEN }}
+

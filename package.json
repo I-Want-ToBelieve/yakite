@@ -1,0 +1,63 @@
+{
+  "name": "yakite",
+  "version": "0.1.0",
+  "private": "true",
+  "type": "module",
+  "description": "A dynamic tiled window management that bridges the gap between yabai and krohnkite",
+  "author": "I-Want-ToBelieve",
+  "license": "MIT",
+  "scripts": {
+    "setup": "rm -rf node_modules apps/*/node_modules && pnpm install && pnpm build",
+    "build": "pnpm clean && pnpm -r build",
+    "rebuild": "pnpm install && pnpm build",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "watch": "pnpm --parallel run watch",
+    "clean": "rm -rf apps/*/dist",
+    "changeset": "changeset",
+    "version:no-npm": "pnpm exec tsx ./scripts/changesets-extra.ts",
+    "version": "changeset version && pnpm install:frozen && pnpm version:no-npm",
+    "install:frozen": "pnpm install --frozen-lockfile false",
+    "release": "changeset publish",
+    "release:beta": "changeset pre enter beta && pnpm run version && pnpm build && pnpm release && changeset pre exit",
+    "release:snapshot": "changeset version --snapshot canary && pnpm install:frozen && pnpm build && pnpm release --tag canary --no-git-tag --snapshot"
+  },
+  "keywords": [
+    "yakite",
+    "yabai",
+    "krohnkite",
+    "dynamic tiled window management"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-Want-ToBelieve/yakite"
+  },
+  "homepage": "https://github.com/I-Want-ToBelieve/yakite",
+  "bugs": "https://github.com/I-Want-ToBelieve/yakite/issues",
+  "dependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@iarna/toml": "^2.2.5",
+    "@manypkg/cli": "^0.21.0",
+    "@manypkg/get-packages": "^2.2.0",
+    "@microsoft/api-extractor": "^7.38.3",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "bun-types": "^1.0.13",
+    "eslint": "^8.54.0",
+    "eslint-config-standard-with-typescript": "latest",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "execa": "^8.0.1",
+    "jiti": "^1.21.0",
+    "parse-json": "^8.0.0",
+    "prettier": "^3.1.0",
+    "ts-json-schema-generator": "^1.4.0",
+    "ts-standard": "^12.0.2",
+    "ts-to-zod": "^3.2.0",
+    "tsc-alias": "^1.8.8",
+    "tsup": "^8.0.0",
+    "tsx": "^4.2.0",
+    "yakite-daemon": "^0.1.0",
+    "zod": "^3.22.4"
+  }
+}

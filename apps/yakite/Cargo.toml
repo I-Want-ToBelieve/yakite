@@ -1,0 +1,20 @@
+[package]
+name = "yakite"
+version = "0.1.0"
+edition = "2021"
+description = "A dynamic tiled window management that bridges the gap between yabai and krohnkite"
+
+[dependencies]
+zmq = "0.10.0"
+log = "0.4"
+fern = "0.6"
+humantime = "2.1.0"
+serde_json = "1.0"
+
+  [dependencies.clap]
+  version = "4.4.7"
+  features = [ "derive" ]
+
+  [dependencies.serde]
+  version = "1.0"
+  features = [ "derive" ]

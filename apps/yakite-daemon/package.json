@@ -1,0 +1,31 @@
+{
+  "name": "yakite-daemon",
+  "version": "0.1.0",
+  "description": "A dynamic tiled window management that bridges the gap between yabai and krohnkite",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "bin": {
+    "yakite-daemon": "./dist/bin/yakite-daemon.js"
+  },
+  "scripts": {
+    "test": "bun test",
+    "build": "tsup",
+    "to-json": "ts-json-schema-generator --tsconfig './tsconfig.json' --path './src/config/index.ts' --type 'Config' --out './src/config/schema.json'"
+  },
+  "author": "I-Want-ToBelieve",
+  "license": "MIT",
+  "dependencies": {
+    "debounce": "^2.0.0",
+    "execa": "^8.0.1",
+    "fast-json-stringify": "^5.9.1",
+    "krohnkite-core": "workspace:*",
+    "parse-json": "^8.0.0",
+    "winston": "^3.11.0",
+    "yakite-bridge": "workspace:*",
+    "yakite-config": "workspace:*",
+    "yakite-message": "workspace:*",
+    "yakite-yabai": "workspace:*",
+    "zeromq": "6.0.0-beta.17"
+  }
+}

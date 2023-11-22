@@ -1,0 +1,18 @@
+{
+  "name": "yakite-yabai",
+  "version": "0.1.0",
+  "description": "A dynamic tiled window management that bridges the gap between yabai and krohnkite",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "test": "bun test",
+    "build": "tsup"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^8.0.1",
+    "parse-json": "^8.0.0"
+  }
+}

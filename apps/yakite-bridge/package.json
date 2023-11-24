@@ -1,6 +1,6 @@
 {
   "name": "yakite-bridge",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A dynamic tiled window management that bridges the gap between yabai and krohnkite",
   "type": "module",
   "main": "./dist/index.js",

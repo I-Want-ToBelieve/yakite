@@ -51,9 +51,9 @@ It will automatically generate this configuration file with default configuratio
 
 - [x] Changesets
   - [x] Implementing non-node package version management through ChangesetsExtra
-- [ ] Github Actions
+- [x] Github Actions
   - [x] Version
-  - [ ] Release
+  - [x] Release
 - [ ] Mouse support(Yabai's window does not have the moving and resizing attributes. To judge the behavior of mouse movement or window resizing, additional information must be obtained from the monitoring of mouse events.)
 - [ ] Trigger recalculation of available screen space after dock and global menu are hidden
 - [ ] Communicates directly with yabai via socket(the current communication is via command line forwarding)

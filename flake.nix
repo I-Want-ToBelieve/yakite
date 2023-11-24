@@ -181,7 +181,7 @@
             clippy.enable = true;
 
             # objective-c
-            clang-format.enable = true;
+            clang-format.enable = false;
           };
 
           # Plugin configuration

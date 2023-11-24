@@ -9,18 +9,29 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout Branch
+        uses: actions/checkout@v4
 
       - name: Install Nix
-        uses: cachix/install-nix-action@v14
+        uses: cachix/install-nix-action@v23
         with:
           nix_path: nixpkgs=channel:nixos-unstable
           extra_nix_config: |
             experimental-features = nix-command flakes
 
-      - name: Install direnv-nix
-        run: nix shell nixpkgs#direnv -c direnv allow .
+      - name: Verify Nix Installation
+        run: nix shell nixpkgs#nix-info -c nix-info -m
+
+      - name: Install Direnv With Nix
+        uses: aldoborrero/direnv-nix-action@v2
+        with:
+          use_nix_profile: true
+          nix_channel: nixpkgs
+
+      - name: Load PATH Changes
+        run: direnv exec . sh -c 'echo $PATH' > "$GITHUB_PATH"
+      - name: Load other environment changes
+        run: direnv export gha >> "$GITHUB_ENV"
 
       - name: Build
         run: cd $DEVENV_ROOT/apps/yakite; cargo build --release

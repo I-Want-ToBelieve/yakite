@@ -7,9 +7,11 @@
   "types": "./dist/src/index.d.ts",
   "scripts": {
     "test": "bun test",
-    "build": "tsup"
+    "build": "tsup",
+    "type:check": "tsc --noemit",
+    "watch": "tsup --watch"
   },
-  "author": "",
+  "author": "I-Want-ToBelieve",
   "license": "MIT",
   "dependencies": {
     "execa": "^8.0.1",

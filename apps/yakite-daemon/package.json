@@ -11,6 +11,8 @@
   "scripts": {
     "test": "bun test",
     "build": "tsup",
+    "type:check": "tsc --noemit",
+    "watch": "tsup --watch",
     "to-json": "ts-json-schema-generator --tsconfig './tsconfig.json' --path './src/config/index.ts' --type 'Config' --out './src/config/schema.json'"
   },
   "author": "I-Want-ToBelieve",

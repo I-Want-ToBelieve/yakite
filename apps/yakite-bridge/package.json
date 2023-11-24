@@ -5,11 +5,10 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
-  "bin": {
-    "yakite-daemon": "./dist/bin/yakite-daemon.js"
-  },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "type:check": "tsc --noemit",
+    "watch": "tsup --watch"
   },
   "author": "I-Want-ToBelieve",
   "license": "MIT",

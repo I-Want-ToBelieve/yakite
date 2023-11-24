@@ -145,8 +145,8 @@ importers:
         specifier: workspace:*
         version: link:../yakite-yabai
       zeromq:
-        specifier: 6.0.0-beta.17
-        version: 6.0.0-beta.17
+        specifier: 6.0.0-beta.19
+        version: 6.0.0-beta.19
 
   apps/yakite-message: {}
 
@@ -168,8 +168,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /@aminya/node-gyp-build@4.5.0-aminya.4:
-    resolution: {integrity: sha512-2c2+BqZOxfTz/m+1MNWncMyMgil2WOg8cHhKPf1qUo1t9ohOWOgSeb7TVVD4fnTxIcAcpWdmXBpFkjPRyBVS9g==}
+  /@aminya/node-gyp-build@4.5.0-aminya.5:
+    resolution: {integrity: sha512-TO7GldxDfSeSRNZVmhlm0liS2GX2o2Q/qTlcD3iD4ltTM6dir568LTRZ+ZDsDbLfMAkfhrbU+VuzNYImwYfczg==}
     hasBin: true
     dev: false
 
@@ -4255,8 +4255,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /node-addon-api@6.1.0:
-    resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
+  /node-addon-api@7.0.0:
+    resolution: {integrity: sha512-vgbBJTS4m5/KkE16t5Ly0WW9hz46swAstv0hYYwMtbG7AznRhNyfLRe8HZAiWIpcHzoO7HxhLuBQj9rJ/Ho0ZA==}
     dev: false
 
   /normalize-package-data@2.5.0:
@@ -6029,14 +6029,14 @@ packages:
       commander: 9.5.0
     dev: false
 
-  /zeromq@6.0.0-beta.17:
-    resolution: {integrity: sha512-Tt5L2oBZ1WYsh0rgItpgFHzym5s8UWW7ZScSmwdfP8FP0GD0eJ0ZO0AOjmhqpSZEMQyMUbY5bc/6Xffw/hfkTQ==}
+  /zeromq@6.0.0-beta.19:
+    resolution: {integrity: sha512-2eU6H7Z4r9LmTkseGdIfEqp0k3rJr5EpXQw2oC0bUqy3wpoj1M83IU/c3qHPXp0z8IklNMoVmVm130d3g2Xf3g==}
     engines: {node: '>= 10.2'}
     requiresBuild: true
     dependencies:
-      '@aminya/node-gyp-build': 4.5.0-aminya.4
+      '@aminya/node-gyp-build': 4.5.0-aminya.5
       cross-env: 7.0.3
-      node-addon-api: 6.1.0
+      node-addon-api: 7.0.0
       shelljs: 0.8.5
       shx: 0.3.4
     dev: false

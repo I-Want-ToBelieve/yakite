@@ -1,6 +1,6 @@
 {
   "name": "yakite-daemon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A dynamic tiled window management that bridges the gap between yabai and krohnkite",
   "type": "module",
   "main": "./dist/index.js",
@@ -28,6 +28,6 @@
     "yakite-config": "workspace:*",
     "yakite-message": "workspace:*",
     "yakite-yabai": "workspace:*",
-    "zeromq": "6.0.0-beta.17"
+    "zeromq": "6.0.0-beta.19"
   }
 }

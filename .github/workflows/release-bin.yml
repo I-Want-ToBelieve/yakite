@@ -5,6 +5,17 @@ on:
     types: [created]
 
 jobs:
+  check_tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if tag matches yakite-toast@
+        run: |
+          if [[ "${{ github.event.release.tag_name }}" =~ ^yakite-toast@ ]]; then
+            echo "Tag matches yakite-toast@, proceeding with the workflow."
+          else
+            echo "Tag does not match yakite-toast@, stopping the workflow."
+            exit 1
+          fi
   upload:
     runs-on: macos-latest
     steps:

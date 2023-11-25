@@ -2,11 +2,11 @@
   "name": "yakite-toast",
   "private": true,
   "description": "A cli program that displays a toast window containing the current layout information when the yakite layout changes",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "changesetsExtra": {
     "language": "objective-c",
     "sources": ["src/yakite-toast.m"],
     "versionUpdatePolicy": "source-code-replacement",
-    "prevVersion": "0.1.9"
+    "prevVersion": "0.1.10"
   }
 }

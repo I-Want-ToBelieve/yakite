@@ -1,5 +1,17 @@
 # yakite-bridge
 
+## 0.1.7
+
+### Patch Changes
+
+- [`3614d77`](https://github.com/I-Want-ToBelieve/yakite/commit/3614d77c91d342ab7560ff8e7508f01bc8954019) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - feat: fuck github action
+
+- Updated dependencies [[`3614d77`](https://github.com/I-Want-ToBelieve/yakite/commit/3614d77c91d342ab7560ff8e7508f01bc8954019)]:
+  - krohnkite-core@0.1.7
+  - yakite-config@0.1.7
+  - yakite-message@0.1.7
+  - yakite-yabai@0.1.7
+
 ## 0.1.6
 
 ### Patch Changes

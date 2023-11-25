@@ -52,7 +52,7 @@ int main(int argc, const char * argv[]) {
         BOOL help = [arguments containsObject:@"--help"];
 
         if (version) {
-          printf("Version: 0.1.5\n");
+          printf("Version: 0.1.6\n");
           return 0;
         }
 

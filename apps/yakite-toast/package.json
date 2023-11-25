@@ -1,11 +1,11 @@
 {
   "name": "yakite-toast",
   "private": true,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "changesetsExtra": {
     "language": "objective-c",
     "sources": ["src/yakite-toast.m"],
     "versionUpdatePolicy": "source-code-replacement",
-    "prevVersion": "0.1.6"
+    "prevVersion": "0.1.7"
   }
 }

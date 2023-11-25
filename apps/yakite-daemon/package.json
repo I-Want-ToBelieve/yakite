@@ -24,6 +24,7 @@
     "krohnkite-core": "workspace:*",
     "parse-json": "^8.0.0",
     "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1",
     "yakite-bridge": "workspace:*",
     "yakite-config": "workspace:*",
     "yakite-message": "workspace:*",

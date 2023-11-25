@@ -1,4 +1,5 @@
-import { createLogger, format, transports } from 'winston'
+import { createLogger, format } from 'winston'
+import DailyRotateFile from 'winston-daily-rotate-file'
 
 const logLevels = {
   fatal: 0,
@@ -12,9 +13,14 @@ const logLevels = {
 const logger = createLogger({
   format: format.combine(format.timestamp(), format.json()),
   levels: logLevels,
-  transports: [new transports.Console()]
+  transports: [new DailyRotateFile({
+    dirname: '/tmp',
+    filename: 'yakite-daemon-%DATE%.log',
+    datePattern: 'YYYY-MM-DD-HH',
+    zippedArchive: false,
+    maxSize: '20m',
+    maxFiles: '14d'
+  })]
 })
-
-logger.close()
 
 export default logger

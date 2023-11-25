@@ -1,5 +1,17 @@
 # yakite-bridge
 
+## 0.1.8
+
+### Patch Changes
+
+- [`a4d170a`](https://github.com/I-Want-ToBelieve/yakite/commit/a4d170a88058be0fd7b38666fec43d8f4ee017ba) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - chore: enable file log
+
+- Updated dependencies [[`a4d170a`](https://github.com/I-Want-ToBelieve/yakite/commit/a4d170a88058be0fd7b38666fec43d8f4ee017ba)]:
+  - krohnkite-core@0.1.8
+  - yakite-config@0.1.8
+  - yakite-message@0.1.8
+  - yakite-yabai@0.1.8
+
 ## 0.1.7
 
 ### Patch Changes

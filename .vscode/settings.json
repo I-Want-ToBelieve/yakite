@@ -5,23 +5,30 @@
   "eslint.options": {
     // "overrideConfigFile": "eslint.config.js"
   },
-  "rust-analyzer.linkedProjects": ["apps/yakite/Cargo.toml"],
+  "rust-analyzer.linkedProjects": [
+    "apps/yakite/Cargo.toml"
+  ],
   "nixEnvSelector.nixFile": "${workspaceRoot}/flake.nix",
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.tabSize": 2
   },
-  "rust-analyzer.rustfmt.extraArgs": ["--config", "tab_spaces=2"],
+  "rust-analyzer.rustfmt.extraArgs": [
+    "--config",
+    "tab_spaces=2"
+  ],
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "[objective-c]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "numso.prettier-standard-vscode",
+    "editor.formatOnSave": false
   },
   "[javascript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+    "editor.defaultFormatter": "numso.prettier-standard-vscode",
+    "editor.formatOnSave": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "numso.prettier-standard-vscode",

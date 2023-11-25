@@ -7,10 +7,8 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "启动程序",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "name": "start",
+      "skipFiles": ["<node_internals>/**"],
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/apps/yakite-daemon/dist/bin/yakite-daemon.js",
       "outFiles": [

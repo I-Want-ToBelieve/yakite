@@ -1,5 +1,11 @@
 # yakite-yabai
 
+## 0.1.6
+
+### Patch Changes
+
+- [`5d81753`](https://github.com/I-Want-ToBelieve/yakite/commit/5d817533c827ec2ecdada77784cdc11f062cd41f) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - chore: use deploy key instead of a PAT.
+
 ## 0.1.5
 
 ### Patch Changes

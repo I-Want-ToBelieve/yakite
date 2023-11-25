@@ -1,5 +1,6 @@
 {...}: let
-  yakite = "/Users/i.want.to.believe/git.workspaces/js.workspaces/yakite/apps/yakite/target/release/yakite";
+  # yakite = "/Users/i.want.to.believe/git.workspaces/js.workspaces/yakite/apps/yakite/target/release/yakite";
+  yakite = "yakite";
 in {
   services = {
     karabiner-elements = {
@@ -69,6 +70,8 @@ in {
       };
       extraConfig = ''
         borders active_color=0xff6eff89 inactive_color=0xff516468 width=12.0 2>/dev/null 1>&2 &
+
+        yakite-daemon 2>/dev/null 1>&2 &
       '';
     };
   };

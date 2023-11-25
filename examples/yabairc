@@ -1,0 +1,7 @@
+yabai -m config focus_follows_mouse off
+yabai -m config mouse_follows_focus off
+yabai -m config window_opacity 0.900000
+
+borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 2>/dev/null 1>&2 &
+
+yakite-daemon 2>/dev/null 1>&2 &

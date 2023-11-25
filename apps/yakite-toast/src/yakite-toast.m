@@ -72,7 +72,7 @@ int main(int argc, const char * argv[]) {
         NSDictionary *args =
             [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
 
-        NSString *text = args[@"-text"] ?: @"Default text";
+        NSString *text = args[@"-text"] ?: @"Hello World!";
         NSTimeInterval time = [args[@"-time"] doubleValue] ?: 1.5;
         NSString *position = args[@"-position"] ?: @"center";
 

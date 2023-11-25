@@ -113,9 +113,12 @@
           scripts."yakite-toast:build".exec = ''
             cd $DEVENV_ROOT/apps/yakite-toast/src
             mkdir ../dist
-            /usr/bin/clang -framework Cocoa yakite-toast.m -o ../dist/yakite-toast \
-            && bunx chalk-cli green bold 'Build Done!' \
-            || bunx chalk-cli red bold 'Build Failed!'
+            /usr/bin/clang -framework Cocoa -target arm64-apple-macos11 yakite-toast.m -o ../dist/yakite-toast-arm64
+            /usr/bin/clang -framework Cocoa -arch x86_64 yakite-toast.m -o ../dist/yakite-toast-x86_64
+
+            /usr/bin/lipo ../dist/yakite-toast-arm64 ../dist/yakite-toast-x86_64 -create -output ../dist/yakite-toast \
+              && bunx chalk-cli green bold 'Build Done!' \
+              || bunx chalk-cli red bold 'Build Failed!'
 
           '';
           scripts."yakite-toast:test".exec = ''

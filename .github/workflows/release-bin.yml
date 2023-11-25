@@ -1,21 +1,11 @@
 name: ReleaseBin
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - 'yakite-toast*'
 
 jobs:
-  check_tag:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check if tag matches yakite-toast@
-        run: |
-          if [[ "${{ github.event.release.tag_name }}" =~ ^yakite-toast@ ]]; then
-            echo "Tag matches yakite-toast@, proceeding with the workflow."
-          else
-            echo "Tag does not match yakite-toast@, stopping the workflow."
-            exit 1
-          fi
   upload:
     runs-on: macos-latest
     steps:
@@ -46,14 +36,11 @@ jobs:
       - name: Build
         run: yakite-toast:build
 
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./apps/yakite-toast/dist/yakite-toast
-          asset_name: yakite-toast
-          asset_content_type: application/octet-stream
 
+      - name: Upload Binaries To Release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./apps/yakite-toast/dist/yakite-toast
+          asset_name: yakite-toast
+          tag: ${{ github.ref }}

@@ -2,8 +2,9 @@ name: Publish to Crates.io
 
 on:
   push:
-    tags:
-      - 'yakite@*' # only yakite@x.x.x
+    tags-ignore: # only yakite@x.x.x
+      - 'yakite-*'
+      - 'krohnkite-core*'
 
 jobs:
   publish:
@@ -37,6 +38,6 @@ jobs:
         run: cd $DEVENV_ROOT/apps/yakite; cargo build --release
 
 
-      - name: Publish to Crates.io
+      - name: Publish To Crates.io
         run: cd $DEVENV_ROOT/apps/yakite; cargo publish --token ${{ secrets.CRATES_IO_TOKEN }}
 

@@ -1,5 +1,11 @@
 # yakite-message
 
+## 0.1.8
+
+### Patch Changes
+
+- [`a4d170a`](https://github.com/I-Want-ToBelieve/yakite/commit/a4d170a88058be0fd7b38666fec43d8f4ee017ba) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - chore: enable file log
+
 ## 0.1.7
 
 ### Patch Changes

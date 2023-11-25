@@ -2,9 +2,8 @@ name: Publish to Crates.io
 
 on:
   push:
-    tags-ignore: # only yakite@x.x.x
-      - 'yakite-*'
-      - 'krohnkite-core*'
+    tags: # only
+      - 'yakite@*'
 
 jobs:
   publish:

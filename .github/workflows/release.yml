@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Install Nix
         uses: cachix/install-nix-action@v23

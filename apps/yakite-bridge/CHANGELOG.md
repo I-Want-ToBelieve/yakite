@@ -1,5 +1,17 @@
 # yakite-bridge
 
+## 0.1.5
+
+### Patch Changes
+
+- [`50c083e`](https://github.com/I-Want-ToBelieve/yakite/commit/50c083e0c9fed1806c1db146d57accc2ac9ea1c8) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - chore: try to trigger github action tags monitoring
+
+- Updated dependencies [[`50c083e`](https://github.com/I-Want-ToBelieve/yakite/commit/50c083e0c9fed1806c1db146d57accc2ac9ea1c8)]:
+  - krohnkite-core@0.1.5
+  - yakite-config@0.1.5
+  - yakite-message@0.1.5
+  - yakite-yabai@0.1.5
+
 ## 0.1.4
 
 ### Patch Changes

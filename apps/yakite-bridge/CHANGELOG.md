@@ -1,5 +1,17 @@
 # yakite-bridge
 
+## 0.1.10
+
+### Patch Changes
+
+- [`116da02`](https://github.com/I-Want-ToBelieve/yakite/commit/116da022e5a20e03256efac8d111d8632ee83aff) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - fix: remove the duplicates FloatingLayout
+
+- Updated dependencies [[`116da02`](https://github.com/I-Want-ToBelieve/yakite/commit/116da022e5a20e03256efac8d111d8632ee83aff)]:
+  - krohnkite-core@0.1.10
+  - yakite-config@0.1.10
+  - yakite-message@0.1.10
+  - yakite-yabai@0.1.10
+
 ## 0.1.9
 
 ### Patch Changes

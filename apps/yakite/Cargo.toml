@@ -1,6 +1,6 @@
 [package]
 name = "yakite"
-version = "0.1.9"
+version = "0.1.10"
 edition = "2021"
 description = "A dynamic tiled window management that bridges the gap between yabai and krohnkite"
 license = "MIT"

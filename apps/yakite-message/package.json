@@ -1,6 +1,6 @@
 {
   "name": "yakite-message",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A dynamic tiled window management that bridges the gap between yabai and krohnkite",
   "type": "module",
   "main": "./dist/index.js",

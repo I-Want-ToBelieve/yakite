@@ -1,5 +1,18 @@
 # yakite-daemon
 
+## 0.1.9
+
+### Patch Changes
+
+- [`c2b840d`](https://github.com/I-Want-ToBelieve/yakite/commit/c2b840df4141c3ef7c16c69c4e06dd1e2c7c525b) Thanks [@I-Want-ToBelieve](https://github.com/I-Want-ToBelieve)! - chore(yakite-toast): add arm support
+
+- Updated dependencies [[`c2b840d`](https://github.com/I-Want-ToBelieve/yakite/commit/c2b840df4141c3ef7c16c69c4e06dd1e2c7c525b)]:
+  - krohnkite-core@0.1.9
+  - yakite-bridge@0.1.9
+  - yakite-config@0.1.9
+  - yakite-message@0.1.9
+  - yakite-yabai@0.1.9
+
 ## 0.1.8
 
 ### Patch Changes

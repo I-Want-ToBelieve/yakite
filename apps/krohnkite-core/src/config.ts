@@ -53,7 +53,16 @@ export interface Config {
 export const DEFAULT_CONFIG: Readonly<Config> = {
   experimentalBackend: false,
 
-  layoutOrder: ['TileLayout', 'MonocleLayout', 'ThreeColumnLayout', 'SpreadLayout', 'StairLayout', 'SpiralLayout', 'QuarterLayout', 'FloatingLayout', 'CascadeLayout'],
+  layoutOrder: [
+    'TileLayout',
+    'MonocleLayout',
+    'ThreeColumnLayout',
+    'SpreadLayout',
+    'StairLayout',
+    'SpiralLayout',
+    'QuarterLayout',
+    'CascadeLayout'
+  ],
   monocleMaximize: false,
   maximizeSoleTile: false,
   monocleMinimizeRest: false,

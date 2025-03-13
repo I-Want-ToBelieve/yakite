@@ -127,9 +127,10 @@
           '';
           scripts."all:build".exec = ''
             cd $DEVENV_ROOT
-            sh -c $'sleep 0.314;zellij -s yakite -s yakite action write-chars "zellij run -- yakite-toast:build\n"' &
-            sh -c $'sleep 0.314;zellij -s yakite -s yakite action write-chars "zellij run -- yakite:build\n"' &
-            sh -c $'sleep 0.314;zellij -s yakite -s yakite action write-chars "zellij run -- pnpm --recursiv build\n"' &
+            sh -c $'sleep 0.314;zellij -s yakite' &
+            sh -c $'sleep 0.314;zellij -s yakite action write-chars "zellij run -- yakite-toast:build\n"' &
+            sh -c $'sleep 0.314;zellij -s yakite action write-chars "zellij run -- yakite:build\n"' &
+            sh -c $'sleep 0.314;zellij -s yakite action write-chars "zellij run -- pnpm --recursiv build\n"' &
             zellij --session yakite || zellij attach yakite
           '';
           scripts."one-click".exec = ''
